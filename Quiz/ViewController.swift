@@ -61,6 +61,9 @@ class ViewController: UIViewController {
     
     func animateLabelTransitions(){
         
+        //Force any outstanding layout changes to occur 
+        view.layoutIfNeeded()
+        
         //Animate the alpha
         //and the center X constraints 
         let screenWidth = view.frame.width

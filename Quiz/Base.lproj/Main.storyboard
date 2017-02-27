@@ -64,15 +64,17 @@
                             <constraint firstItem="1fA-fH-Q7O" firstAttribute="centerX" secondItem="Met-qy-eDn" secondAttribute="centerX" id="gTz-r2-CL8"/>
                             <constraint firstItem="7FH-Xq-WPZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iN6-Xk-Tcb"/>
                             <constraint firstItem="5Cl-bt-xqR" firstAttribute="top" secondItem="1fA-fH-Q7O" secondAttribute="bottom" constant="33" id="iYH-JD-NFh"/>
+                            <constraint firstItem="Met-qy-eDn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nbA-x6-hcu"/>
                             <constraint firstItem="5Cl-bt-xqR" firstAttribute="centerX" secondItem="Met-qy-eDn" secondAttribute="centerX" id="oFR-hN-jHG"/>
                             <constraint firstItem="7FH-Xq-WPZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="r4u-Cp-m8k"/>
-                            <constraint firstItem="7FH-Xq-WPZ" firstAttribute="centerX" secondItem="Met-qy-eDn" secondAttribute="centerX" id="s3U-O7-5MW"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="1fA-fH-Q7O" id="bzQ-Oi-ljd"/>
                         <outlet property="currentQuestionLabel" destination="7FH-Xq-WPZ" id="it1-0b-Tfs"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="iN6-Xk-Tcb" id="9cG-5O-mBl"/>
                         <outlet property="nextQuestionLabel" destination="ekU-Gq-rbc" id="fHY-9p-Qlu"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="b9R-WT-iJn" id="wBk-ah-vYO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

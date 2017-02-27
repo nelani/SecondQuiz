@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -47,11 +47,19 @@
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lNp-Sh-A1x"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekU-Gq-rbc">
+                                <rect key="frame" x="166.5" y="77" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Met-qy-eDn" firstAttribute="top" secondItem="7FH-Xq-WPZ" secondAttribute="bottom" constant="8" id="493-Ws-pmd"/>
                             <constraint firstItem="1fA-fH-Q7O" firstAttribute="top" secondItem="Met-qy-eDn" secondAttribute="bottom" constant="105" id="LMl-oZ-xbq"/>
+                            <constraint firstItem="ekU-Gq-rbc" firstAttribute="top" secondItem="7FH-Xq-WPZ" secondAttribute="top" id="NFW-hk-R6v"/>
+                            <constraint firstItem="ekU-Gq-rbc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b9R-WT-iJn"/>
                             <constraint firstItem="1fA-fH-Q7O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gFf-rb-KNd"/>
                             <constraint firstItem="1fA-fH-Q7O" firstAttribute="centerX" secondItem="Met-qy-eDn" secondAttribute="centerX" id="gTz-r2-CL8"/>
                             <constraint firstItem="7FH-Xq-WPZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iN6-Xk-Tcb"/>
@@ -63,7 +71,8 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="1fA-fH-Q7O" id="bzQ-Oi-ljd"/>
-                        <outlet property="questionLabel" destination="7FH-Xq-WPZ" id="Dwe-cN-Zih"/>
+                        <outlet property="currentQuestionLabel" destination="7FH-Xq-WPZ" id="it1-0b-Tfs"/>
+                        <outlet property="nextQuestionLabel" destination="ekU-Gq-rbc" id="fHY-9p-Qlu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
